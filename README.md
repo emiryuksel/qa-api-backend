@@ -34,7 +34,7 @@ qa-express-backend/
 
 Environment variables are stored in `config/env/config.env`. Use the provided `env.example` as a template.
 
-### 📄 Example `config.env`
+## 📄 Example `config.env`
 
 
 # Server
@@ -61,7 +61,7 @@ SMTP_PASS=your_app_specific_password
 
 > 🔐 **Security Note**: Do not commit `config.env` to version control. It is included in `.gitignore`.
 
-### 📝 Creating `config.env` from `env.example`
+## 📝 Creating `config.env` from `env.example`
 
 To quickly set up your environment variables:
 
@@ -71,7 +71,7 @@ cp env.example config/env/config.env
 
 Then, edit `config/env/config.env` with your MongoDB and SMTP credentials.
 
-### 🗄️ MongoDB URI Setup
+## 🗄️ MongoDB URI Setup
 
 If you're using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), follow these steps:
 
