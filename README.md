@@ -2,7 +2,16 @@
 
 A Node.js + Express RESTful API backend for a question-answer platform. Features user registration, JWT-based authentication, question and answer posting, password reset via email, and more.
 
-## 🚀 Technologies Used
+---
+
+## 🚀 Live Demo
+
+> The frontend is currently under development and will be available soon.  
+> In the meantime, you can explore and test the API using Postman or any REST client.
+
+---
+
+## 🛠️ Technologies Used
 
 - **Node.js** – Runtime environment
 - **Express.js** – Web framework
@@ -12,64 +21,48 @@ A Node.js + Express RESTful API backend for a question-answer platform. Features
 - **dotenv** – Environment variable management
 - **Postman** – API testing
 
-## 📁 Project Structure
-
-
-qa-express-backend/
-├── controllers/           # Route handlers
-├── models/                # Mongoose schemas
-├── routes/                # API routes
-├── middleware/            # Auth, error handling, etc.
-├── config/
-│   └── env/
-│       └── config.env     # Environment variables (not tracked)
-├── utils/                 # Helper functions
-├── server.js              # Entry point
-├── env.example            # Example environment variables
-├── package.json
-└── README.md
-
+---
 
 ## ⚙️ Configuration – `config.env`
 
 Environment variables are stored in `config/env/config.env`. Use the provided `env.example` as a template.
 
+---
+
 ## 📄 Example `config.env`
 
-
-# Server
+#### Server
 PORT=5000
 NODE_ENV=development
 
-# MongoDB
+#### MongoDB
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
 
-# JWT
+#### JWT
 JWT_SECRET_KEY=your_jwt_secret_key
 JWT_EXPIRE=10m
 JWT_COOKIE=10
 
-# Password Reset Token Expiry (in ms)
+### Password Reset Token Expiry (in ms)
 RESET_PASSWORD_EXPIRE=3600000
 
-# Email (SMTP) Configuration
+### Email (SMTP) Configuration
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_USER=your_email@gmail.com
 SMTP_PASS=your_app_specific_password
 
-
-> 🔐 **Security Note**: Do not commit `config.env` to version control. It is included in `.gitignore`.
+---
 
 ## 📝 Creating `config.env` from `env.example`
 
 To quickly set up your environment variables:
 
-
 cp env.example config/env/config.env
 
-
 Then, edit `config/env/config.env` with your MongoDB and SMTP credentials.
+
+---
 
 ## 🗄️ MongoDB URI Setup
 
@@ -90,6 +83,9 @@ mongodb+srv://admin:myPassword123@cluster0.abcde.mongodb.net/qa-platform?retryWr
 
 
 > Replace `<username>`, `<password>`, `<cluster>`, and `<dbname>` with your actual MongoDB credentials.
+
+---
+
 
 ## 📦 Getting Started
 
@@ -115,11 +111,11 @@ npm install
 
 4. **Run the server**
 
-
 npm run dev
 
-
 > Ensure `nodemon` is installed globally (`npm install -g nodemon`) or as a dev dependency.
+
+---
 
 ## 🧪 API Testing (via Postman)
 
@@ -152,11 +148,18 @@ Test endpoints using Postman or any API client.
 
 > **Note**: Protected routes require a JWT token in the `Authorization: Bearer <token>` header.
 
+---
+
 ## 📫 Contact
 
 Maintained by [Your Name].  
 Feel free to open issues or submit pull requests.
 
+---
+
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
