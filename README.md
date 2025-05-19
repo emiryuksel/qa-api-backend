@@ -54,16 +54,6 @@ SMTP_PASS=your_app_specific_password
 
 ---
 
-## 📝 Creating `config.env` from `env.example`
-
-To quickly set up your environment variables:
-
-cp env.example config/env/config.env
-
-Then, edit `config/env/config.env` with your MongoDB and SMTP credentials.
-
----
-
 ## 🗄️ MongoDB URI Setup
 
 If you're using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), follow these steps:
