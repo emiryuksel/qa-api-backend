@@ -23,12 +23,6 @@ A Node.js + Express RESTful API backend for a question-answer platform. Features
 
 ---
 
-## ⚙️ Configuration – `config.env`
-
-Environment variables are stored in `config/env/config.env`. Use the provided `env.example` as a template.
-
----
-
 ## 📄 Example `config.env`
 
 #### Server
@@ -77,7 +71,7 @@ mongodb+srv://admin:myPassword123@cluster0.abcde.mongodb.net/qa-platform?retryWr
 ---
 
 
-## 📦 Getting Started
+## 📦 Installation
 
 Follow these steps to run the project locally:
 
@@ -134,7 +128,7 @@ Test endpoints using Postman or any API client.
 | Method | Endpoint                      | Description                |
 |--------|-------------------------------|----------------------------|
 | POST   | `/questions/:id/answers`      | Answer a question          |
-| DELETE | `/questions/:id/answers/:aid` | Delete an answer           |
+| DELETE | `/questions/:id/answers/delete` | Delete an answer         |
 
 > **Note**: Protected routes require a JWT token in the `Authorization: Bearer <token>` header.
 
@@ -142,7 +136,7 @@ Test endpoints using Postman or any API client.
 
 ## 📫 Contact
 
-Maintained by [Your Name].  
+Maintained by emiryuksel.
 Feel free to open issues or submit pull requests.
 
 ---
